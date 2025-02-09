@@ -94,8 +94,13 @@ function addTask() {
       // task.innerHTML = `<h2>${title}  <br> ${detail} <br>(${date})</h2> <button onclick="this.parentElement.remove()">❌</button>`;
       
       
-
-      taskCloseBtn.style.display='none'
+      
+      taskCloseBtn.textContent=('Removed');
+      taskCloseBtn.className='taskCloseBtn';
+      taskCloseBtn.addEventListener(('click'),()=>{
+        task.remove();
+      });
+      
       taskList.appendChild(task);
       task.append(titleBtn,taskListText ,spanText);
       titleBtn.append(taskListTitle,taskCloseBtn);
@@ -103,14 +108,8 @@ function addTask() {
       closeModal();
       task.addEventListener(('click'),()=>{
         task.classList.toggle('active');
-        taskCloseBtn.style.display='inline-block';
-        taskCloseBtn.textContent=('Removed');
-        taskCloseBtn.className='taskCloseBtn';
         task.style.transition='all 0.4s ease'
         
-        taskCloseBtn.addEventListener(('click'),()=>{
-          task.remove();
-        });
       });
       
 
