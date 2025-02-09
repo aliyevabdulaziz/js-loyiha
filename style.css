@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 5px auto;
+  background: white;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.site__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button{
+  border-radius: 15px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+input{
+  border-radius: 15px;
+  width: 90%;
+}
+
+.site__title {  
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.site__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  border-bottom: black 2px solid;
+}
+
+.site__item{
+  padding: 8px 33px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.item__active{
+  background-color:red;
+  color: white;
+}
+
+.task-list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.task {
+  width: 95%;
+  background:  #9FE3E8;
+  padding: 10px;
+  margin-bottom: 20px ;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgb(81, 109, 122) 5px 5px 10px 1px;
+}
+
+.spanText{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.task-list__title{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.task-list__text{
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 18px;  
+}
+
+.task-list__text-2{
+  font-size: 18px;
+  font-weight: 700;  
+}
+
+#taskDetail{
+  height: 71px;
+  border-radius: 15px;
+  width: 92%;
+  padding: 10px;
+}
+
+.active{
+  background-color:  #F4A4A9;
+  box-shadow:#ad767ace 5px 5px 10px 1px;
+}
+
+#select{
+  border-radius: 15px;
+  width: 92%;
+}
+
+.titleBtn{
+  margin-bottom: 12px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-task {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-task button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskCloseBtn{
+  border: none;
+  background-color: transparent;
+  size: 14px;
+  cursor: pointer;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal input, .modal select {
+  width: 92%;
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  border: #7a7a7a 1px solid;
+}
+
+.modal button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-right: 15px;
+}
+
+.modal button:hover {
+  opacity: 0.7;
+}
+

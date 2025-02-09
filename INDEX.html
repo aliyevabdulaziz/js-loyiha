@@ -1,0 +1,44 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+    <div class="container site__container">
+        <h1 class="site__title">ToDolist</h1>
+        <ul class="site__list">
+            <li class="site__item barchasi item__active">Barchasi</li>
+            <li class="site__item bajarilgan">Bajarilganlar</li>
+            <li class="site__item bajarilmagan">Bajarilmaganlar</li>
+        </ul>
+        <div class="task-list" id="taskList"></div>
+        <div class="add-task">
+            <button onclick="openModal()">+</button>
+        </div>
+    </div>
+
+    <div class="modal" id="taskModal">
+      <div class="modal-content">
+        <h3>Yangi topshiriq</h3>
+        <input type="text" id="taskTitle" placeholder="Topshiriq tavsifi">
+        <textarea type="text" id="taskDetail" placeholder="Topshiriq matni"></textarea>
+        <input type="date" id="taskDate">
+        <select name="a" id="select">
+        <option value="tanlanmagan">guruh azosi</option>
+        <option value="Aliyev.A">Aliyev.A</option>
+        <option value="Odiliv.J">Odiliv.J</option>
+        <option value="Boshqalar">Boshqalar</option>
+        </select>
+        <div class="btns"><button onclick="addTask()">Qo'shish</button>
+            <button class="claseBtn" onclick="closeModal()">Yopish</button></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
